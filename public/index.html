@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe Game</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Your CSS styles here */
+    * {
+      box-sizing: border-box;
+      font-family: 'Roboto Serif', serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .game {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 800px; /* Adjusted maximum width */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* Align buttons to the right */
+    }
+
+    .status {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .board-row {
+      display: flex;
+    }
+
+    .square {
+      background: #fff;
+      border: 1px solid #999;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 54px; /* Increased line height for larger squares */
+      height: 54px; /* Increased square size */
+      margin: 3px;
+      padding: 0;
+      text-align: center;
+      width: 54px; /* Increased square size */
+    }
+
+    .board-row:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .game {
+        width: 90%;
+        padding: 20px;
+        align-items: center; /* Center align on smaller screens */
+      }
+
+      .square {
+        font-size: 20px;
+        line-height: 48px;
+        height: 48px;
+        width: 48px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .game {
+        width: 100%;
+        max-width: none; /* Remove max-width for full width on smaller screens */
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Your JavaScript bundle (React) -->
+  <script src="path/to/your/react/bundle.js"></script>
+</body>
+</html>
